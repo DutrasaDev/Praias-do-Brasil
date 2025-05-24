@@ -1,3 +1,5 @@
+/*A estrutura do css é composta: Pela identificação do elemento seguido de chaves, e por fim dentro das chaves você escolhe o atributo que deseja modificar seguido do parâmetro. Ex: p{font-fize:16px}*/
+
 body{
     background-color: lightgrey;
     font-size: 20px;
@@ -82,7 +84,7 @@ a:hover{
     text-align: left;
 }
 
-#sec2{
+#secsatu{
     background-color: bisque;
 }
 
@@ -116,7 +118,7 @@ a:hover{
     text-shadow: 1px 1px 15px orange;
 }
 
-#sec3{
+#secgarapua{
     background-color: palegreen;
 }
 
@@ -158,7 +160,7 @@ a:hover{
     text-shadow: 1px 1px 15px gold;
 }
 
-#sec4{
+#secquebrado{
     background-color: plum;
 }
 
@@ -200,7 +202,7 @@ a:hover{
     text-shadow: 1px 1px 15px darkmagenta;
 }
 
-#sec5{
+#secespelho{
     background-color: aquamarine;
 }
 
@@ -253,4 +255,85 @@ a:hover{
 }
 #imgmaresias:hover{
     box-shadow: 1px 1px 15px black;
+}
+
+#imgsatu{
+    transition: 0.3s ease;
+}
+#imgsatu:hover{
+    box-shadow: 1px 1px 15px black;
+}
+
+#imgquebrado{
+    transition: 0.3s ease;
+}
+#imgquebrado:hover{
+    box-shadow: 1px 1px 15px black;
+}
+
+#imggarapua{
+    transition: 0.3s ease;
+}
+#imggarapua:hover{
+    box-shadow: 1px 1px 15px black;
+}
+
+#imgespelho{
+    transition: 0.3s ease;
+}
+#imgespelho:hover{
+    box-shadow: 1px 1px 15px black;
+}
+
+#menu{
+    display: none;
+}
+
+.menuicone{
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: fit-content;
+    transition: 0.5s ease;
+}
+
+.menuicone:hover{
+    transform: scale(1.03);
+}
+
+.mobilemenu{
+    display: none;
+    flex-direction: column;
+    background-color: rgb(90, 81, 81);
+    max-width: fit-content;
+    position: absolute;
+}
+
+.mobilemenu a{
+    color: aliceblue;
+    padding: 10px;
+    text-decoration: none;
+    border-top: 1px solid rgb(50,46,46);
+    transition: 0.5s ease;
+}
+
+.mobilemenu a:hover{
+    transform: scale(1.03);
+}
+
+#menu:checked + .menuicone + .mobilemenu{
+    display: flex;
+}
+
+.calculadoraemaresias{
+    display: flex;
+    flex-direction: row;
+}
+
+.calculadora{
+    position: absolute;
+    margin-left: 1300px;
+    margin-top: 100px;
 }
